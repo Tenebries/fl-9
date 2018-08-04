@@ -1,0 +1,190 @@
+/* Task 1 - Done! */
+@media print {
+    .tm-sidebar, #about, .heading, .blocks, #ideas, .tm-content-box {
+        display: none;
+    }
+
+    .tm-main-content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    div.tm-content-box {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .tm-content-box.flex-2-col {
+        padding: 0 55px;
+    }
+
+    .tm-banner {
+        height: 250px;
+    }
+
+    .tm-team-description-container {
+        max-width: 1368px;
+    }
+
+    .pad {
+        padding: 0;
+    }
+
+    .tm-banner-text::first-letter {
+        color: #666;
+        font-size: 1em;
+    }
+
+    h2.tm-section-title {
+        color: #0b05ff;
+    }
+
+    .tm-team-description-container > p.tm-section-description {
+        text-indent: 0;
+        font-style: normal;
+        line-height: normal;
+    }
+
+    p.tm-section-description::first-letter {
+        color: #000000;
+        font-size: 1em;
+    }
+
+    /* looks bad */
+    div.tm-content-box.flex-2-col > div:nth-child(2) {
+        text-align: center;
+    }
+
+    .tm-footer {
+        padding-top: 15px;
+        background-color: white;
+    }
+
+    .tm-footer > p::first-letter {
+        color: #666;
+        font-size: 1.1em;
+    }
+}
+
+/* Task 2 - Done! */
+#about li:nth-child(even) img {
+    border-radius: 50%;
+}
+
+#about li:nth-child(odd):hover {
+    background-color: #31b0d5;
+    cursor: pointer;
+}
+
+#about li:nth-child(odd) > h2:hover {
+    color: #fff;
+    font-size: 2.6em;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+/* Task 3 - Done! */
+p::first-letter {
+    color: #76cdd7;
+    font-size: 30px;
+}
+
+/* Task 4 - Done! */
+.tm-sidebar, .tm-content-box {
+    box-shadow: 0 0 10px #7d7d7d;
+}
+
+/* Task 5 - Done! */
+.tm-content-box {
+    position: relative;
+}
+
+.tm-content-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 25px solid transparent;
+    border-left: 110px solid #31b0d5;
+    z-index: 10;
+}
+
+.tm-main-content > section.blocks > .tm-content-box.flex-2-col::before {
+    content: none;
+}
+
+/* Task 6 - Done! */
+#tmCarousel h2 {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+/* Task 7 - Done! */
+h2 + p {
+    font-style: italic;
+}
+
+/* Task 8 - Done! */
+section p.tm-section-description {
+    line-height: 2em;
+    text-indent: 1.5em;
+}
+
+/* Task 9 - Done! */
+.heading h2 {
+    color: #6acedf;
+    text-align: center;
+}
+
+.heading a:visited {
+    color: silver;
+}
+
+.heading a:hover {
+    color: #59d7ce;
+    text-decoration: underline double;
+}
+
+.heading li:nth-child(1) > a:after,
+.heading li:nth-child(3) > a:after {
+    content: "New";
+    vertical-align: super;
+    color: red;
+    font-size: .7em;
+}
+
+/* Task 10 - Done! */
+.blocks .box:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.boxes.gallery-container p::first-letter {
+    color: #000;
+}
+
+/* Task 11 - Done! */
+nav.tm-main-nav {
+    padding: 0 0;
+}
+
+.tm-main-nav li:not(:last-child) {
+    border-bottom: 1px dotted silver;
+}
+
+/* Task 12 - Done! */
+form input[type="text"],
+form button[type="submit"] {
+    color: red;
+}
+
+.mandatory-field:after {
+    content: "*";
+    color: red;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #31b0d5;
+}
