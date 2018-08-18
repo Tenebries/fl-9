@@ -34,16 +34,16 @@ nav {
     justify-content: flex-end;
 }
 
-li {
+.header-nav-element {
     display: inline;
     margin-right: 30px;
 }
 
-li:last-child {
+.header-nav-element:last-child {
     margin-right: 0;
 }
 
-li:first-child a {
+.header-nav-element:first-child a {
     color: #54597d;
 }
 
@@ -56,7 +56,7 @@ a:hover {
     color: #54597d;
 }
 
-h1 {
+.main-title {
     height: 80px;
     margin: 160px 0;
     color: #ddd;
@@ -92,7 +92,7 @@ h1 {
     grid-area: image;
 }
 
-h2 {
+.fact-title {
     padding-bottom: 30px;
     background: -webkit-linear-gradient(left top, #eee, #333);
     -webkit-background-clip: text;
@@ -101,7 +101,7 @@ h2 {
     font-size: 30px;
 }
 
-p {
+.fact-paragraph {
     color: #5d5d5d;
     text-align: justify;
     text-indent: 20px;
@@ -109,7 +109,7 @@ p {
     line-height: 1.1em;
 }
 
-img {
+.fact-image {
     height: 230px;
 }
 
@@ -126,7 +126,7 @@ img {
         font-size: 1.1em;
     }
 
-    h1 {
+    .main-title {
         margin: 160px 40px;
         font-size: 3em;
     }
@@ -164,14 +164,14 @@ img {
         padding-left: 0;
     }
 
-    li {
+    .header-nav-element {
         display: list-item;
         margin-right: 0;
         border-bottom: 1px solid #ddd;
         padding-left: 15px;
     }
 
-    li:first-child a {
+    .header-nav-element:first-child a {
         font-weight: bold;
     }
 
@@ -180,7 +180,7 @@ img {
         line-height: 2em;
     }
 
-    h1 {
+    .main-title {
         height: 100%;
         margin: 100px 40px 40px 40px;
         color: #000;
@@ -202,18 +202,18 @@ img {
         margin-bottom: 40px;
     }
 
-    h2 {
+    .fact-title {
         -webkit-text-fill-color: unset;
         color: #484747;
         font-size: 2.5em;
     }
 
-    p {
+    .fact-paragraph {
         text-indent: 30px;
         font-size: 1.25em;
     }
 
-    img {
+    .fact-image {
         height: 150px;
     }
 
