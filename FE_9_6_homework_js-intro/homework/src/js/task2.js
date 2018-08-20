@@ -1,6 +1,7 @@
 let sideA = parseFloat(prompt(`Input first side of triangle:`));
 let sideB = parseFloat(prompt(`Input second side of triangle:`));
 let angle = parseFloat(prompt(`Input angle in between:`));
+let result = '';
 
 if (sideA <= 0 || sideB <= 0 || angle <= 0 || isNaN(sideA) || isNaN(sideB) || isNaN(angle)) {
     result = `Invalid data`;
@@ -9,9 +10,9 @@ if (sideA <= 0 || sideB <= 0 || angle <= 0 || isNaN(sideA) || isNaN(sideB) || is
     let area = getArea(sideA, sideB, angle);
     let perimeter = getPerimeter(sideA, sideB);
 
-    result = (`c length: ${+sideC.toFixed(2)}
+    result = `c length: ${+sideC.toFixed(2)}
 Triangle square: ${+area.toFixed(2)}
-Triangle perimeter: ${+perimeter.toFixed(2)}`);
+Triangle perimeter: ${+perimeter.toFixed(2)}`;
 }
 
 console.log(result);
