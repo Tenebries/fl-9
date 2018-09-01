@@ -1,10 +1,10 @@
-function isPrime(a) {
-    if ( a <= 1) {
+function isPrime(number) {
+    if (number <= 1) {
         return false;
     }
 
-    for (let b = 2; b * b <= a; b++) {
-        if (a % b === 0) {
+    for (let i = 2; i * i <= number; i++) {
+        if (number % i === 0) {
             return false;
         }
     }

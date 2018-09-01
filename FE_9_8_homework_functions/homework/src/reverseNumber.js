@@ -1,13 +1,5 @@
-function reverseNumber(a) {
-    let b = 0;
-    let ten = 10;
+reverseNumber = (number) => {
+    let reversed = number.toString().split('').reverse().join('');
 
-    while (a !== 0) {
-        b *= ten;
-        b += a % ten;
-        a -= a % ten;
-        a /= ten;
-    }
-
-    return b;
-}
+    return parseInt(reversed) * Math.sign(number);
+};
