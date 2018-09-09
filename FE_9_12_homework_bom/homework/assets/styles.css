@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+
+body {
+    margin: 0;
+    background-color: #eee;
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+.container {
+    min-height: 500px; /*mb to edit*/
+    width: 768px;
+    margin: 25px auto;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75); /*mb to edit*/
+    background-color: #fff;
+    color: #41403e;
+}
+
+.title {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.action-bar {
+    margin: 1rem 0;
+    text-align: right;
+}
+
+.button {
+    margin: 0 2rem;
+    border: solid 2px #41403e;
+    box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    background: transparent;
+    color: #41403e;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    font-family: 'Patrick Hand SC', cursive;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.button:hover {
+    box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
+}
+
+.to-do-list-header {
+    margin: 0 1rem;
+    border-bottom: solid 2px #41403e;
+}
+
+.to-do-list-header-items {
+    margin-left: 3rem;
+    font-size: 1.5rem;
+}
+
+.items-list {
+    margin: .5rem 1rem;
+}
+
+.item {
+    display: flex;
+    margin: 0 .5rem;
+    border-bottom: dashed 1px #41403e;
+    padding: .25rem 0;
+}
+
+.check-mark-button {
+    border: 0;
+    background: transparent;
+}
+
+.check-mark-icon {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.task-description {
+    margin: 0;
+    padding-left: .5rem;
+}
+
+.delete-button {
+    margin-left: auto;
+    border: 0;
+    background: transparent;
+}
+
+.delete-icon {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.new-item-container {
+    min-height: 200px; /*mb to edit*/
+    width: 768px;
+    margin: 25px auto;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75); /*mb to edit*/
+    background-color: #fff;
+    color: #41403e;
+    text-align: center;
+}
+
+.new-item-input {
+    height: 25px;
+    margin: 2rem auto;
+    border: solid 2px #41403e;
+    width: 75%;
+}
+
+.button:disabled {
+    border: solid 2px #afaca7;
+    color: #afaca7;
+}
